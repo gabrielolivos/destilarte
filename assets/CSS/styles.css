@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@100;300&display=swap');
+/* estilos que apliquen a todo el one page*/
+
+*{
+  border:0px;  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+.sectionVideo{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+}
+.content {
+  max-width: 49rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+.section-video{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+}
+.section-video video{
+  min-width: 100%;
+  min-height: 100%;
+}
+.section-overlay{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #303952;
+  z-index: 1;
+  opacity: .2;
+}
+.section-content{
+z-index: 2;
+}
+.section-content p{
+  z-index: 2;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  }
+/*LEAN
+
+header{
+
+}
+
+
+.video{
+
+}
+*/
+
+/* GABI
+.sugeridas{
+
+}
+
+.api{
+
+}
+*/
+
+/*MARISA
+footer{}
+*/
