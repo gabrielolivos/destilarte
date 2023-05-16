@@ -402,8 +402,14 @@ justify-content:center;
 align-items: center;
 gap:30px ;
 position: relative;
-bottom: 25px;
-right: 35px;
+top:15px;
+
+}
+
+#eframe{
+position:relative;
+left: 4%
+
 }
 
 /*#columna3{
@@ -413,10 +419,9 @@ right: 35px;
   }
 */
 
-.pmapa , .pcontacto{
-position:relative;
-left: 85px;
-
+.pmapa{
+  position: relative;
+  left:11%;
 }
 
 .redes i{
