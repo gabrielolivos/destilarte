@@ -7,13 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/CSS/styles.css">
+    <script src="https://kit.fontawesome.com/86dfe4377b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <nav>
-
-        </nav>
+        <img src="./assets/IMG/Logo1a 1.png" alt="logo" id="logosup">
+        <nav class="navbar">
+          <a href="">Inicio</a>
+          <a href="">Productos</a>
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+      </nav>
     </header>
     <section class="sectionVideo content">
 
@@ -36,14 +40,74 @@
 
     </section>
     <section class="sugeridas">
+        <div class="sutit">
+            <p>SUGERIDAS DEL MES</p>
+        </div>
+        <div class="carrousel">
+            <div class="grande">
+                <img src="./assets/IMG/Group5.jpg" alt="imagen 1" class ="imgcar">
+                <img src="./assets/IMG/Group7.jpg" alt="imagen 2" class ="imgcar">
+                <img src="./assets/IMG/Group9.jpg" alt="imagen 3" class ="imgcar">
+            </div>
+            <ul class="puntos">
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+            </ul>
+            
+        
+
+        </div>
 
     </section>
     <section class="api">
-
+        <div class="apicont">
+            <div>
+                <p id="apitext1">PROBA ALEATORIAMENTE</p>
+                <p> UNA DE NUESTRAS RECETAS!</p>
+            </div>    
+            <button class="botonapi">
+            HACE CLIC
+            </button>
+        </div>
     </section>
-    <footer>
-
-    </footer>
+    <footer class="footer">
+        <div class="columnasx3" id="columna1">
+              <div class="'logo" >
+                 <img src="./assets/IMG/Logo1a 1.png" id="logoinf" alt="DestilArte tienda de licores">
+                 <br>
+              </div>
+              <div class="redes">
+                <br>
+                <p> Redes Sociales</p>
+                <br>
+                  <a href="https://www.instagram.com/DestilArteq/" target="_blank"><i class="fa-brands fa-instagram fa-bounce"></i></a>
+                  <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <br>
+                </div>
+                <div>
+                  <p style=font-size:12px;margin-top:20px;>© 2023. Destilarte. Todos los derechos reservados.</p> 
+              </div>
+        </div>
+        <div class="columnasx3" id="columna2">
+          <p> Cont&aacutectanos </p>
+          <br>
+          <form class="formulario">
+            <div class="form_container">
+              <input type="Text" class="form_input" placeholder="Nombre:">
+              <input type ="email" class="form_input" placeholder=" Email:">
+              <textarea class="form_input form_input_msge" placeholder="Mensaje:"></textarea>
+              <input type="submit" class="form_env" value="Enviar"> 
+            </div>
+          </form>
+        </div>
+        <div class="columnasx3">
+          <p class="pmapa"> Nuestra ubicaci&oacuten </p>
+           <br>
+          <iframe class= "resp_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26277.593719863897!2d-58.430766999999996!3d-34.58647659999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58f32f9e553%3A0x9a1250962f1d2998!2sUriarte%201736%2C%20C1414DAT%20CABA!5e0!3m2!1ses-419!2sar!4v1683008656711!5m2!1ses-419!2sar" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </footer>
 </body>
 
 </html>
