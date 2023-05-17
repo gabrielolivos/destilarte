@@ -344,15 +344,3 @@ left: 85px;
   height: 30px;
   z-index: 10;
 }
-
-/*-----------MediaQuery 744px----------------*/
-@media (max-width:744px) {
-  .footer{
-    flex-direction: column;
-    height: 100%;
-  }
-  .footerUno{
-    display: flex;
-    flex-direction: row;
-  }
-}
