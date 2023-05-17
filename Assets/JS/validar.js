@@ -13,7 +13,7 @@ let entra=false;
 parrafo.innerHTML="";
 let exp_email= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 if (nombre.value.length < 1){ 
-    e.preventDefault();
+   /* e.preventDefault();*/
     warnings=warnings+' Nombre Inválido <br>';
       entra=true;
     }

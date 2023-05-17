@@ -358,6 +358,15 @@ gap:30px ;
 
 }
 
+#avisos{
+  font-family: 'Roboto';
+font-style: normal;
+font-size: 18px;
+line-height: 28px;
+color: #CFA867;
+text-align: center;
+}
+
 .resp_iframe{
 border:0;
 position: relative;
