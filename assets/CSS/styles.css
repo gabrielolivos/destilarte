@@ -15,6 +15,7 @@ body{
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  width: 100vw !important;
 }
 
 a:link, a:visited {
@@ -132,7 +133,7 @@ color: #CFA867;
   flex-direction: column;
   align-items: center;
 width: 100%;
-height: 719px;
+height: auto;
 gap: 50px;
 margin-top: 50px;
 
@@ -204,23 +205,20 @@ width: 100%;
   margin: auto;
   padding-top:5%;
   padding-bottom:5%;
-  width: 654px;
+  width: 80vw;
   height: 300px;
   background: #D9D9D9;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap:40px;
   position: relative;
-  top:95px;
-  padding-top: 200px;  
 }
 
 .apicont.active{
+  position: relative;
   margin: auto;
-  padding-top:5%;
-  padding-bottom:5%;
   width: 654px;
   height: auto;
   background: #D9D9D9;
@@ -229,7 +227,6 @@ width: 100%;
   justify-content: center;
   align-items: center;
   gap:40px;
-  position: relative;
   top:95px;  
 }
 
@@ -257,9 +254,11 @@ line-height: 43px;
 
 }
 
-#apitext1{
+.apicont p{
   position: relative;
-  left:15px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 /* footer
 */
@@ -540,4 +539,26 @@ padding: 0 2rem;
       transform: rotate(-45deg) translate(-5px, 1px);
   }
   .open{ transform: translateX(0) !important}
+
+  /*-----------api----------*/
+ .api{
+  display: flex;
+ } 
+.apicont.inactive{
+  width: 80vw;
+  height: 300px;
+  background: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap:40px;
+  position: relative;
+}
+.apicont p, #apitext1{
+  display: flex;
+  width: 11em;
+  flex-wrap: wrap;
+  word-wrap: break-word;  
+}
 }
