@@ -12,8 +12,8 @@ let warnings ="";
 let entra=false;
 parrafo.innerHTML="";
 let exp_email= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-if (nombre.value.length < 1){ 
-   /* e.preventDefault();*/
+if (nombre.value.length < 1 || !(/^\s+$/.test(nombre))){ 
+    e.preventDefault();
     warnings=warnings+' Nombre Inválido <br>';
       entra=true;
     }
@@ -22,9 +22,9 @@ if (nombre.value.length < 1){
         warnings =warnings+'Email Inválido <br>';
         entra=true
     }
-    if (mensaje.value.length < 1) {
+    if (mensaje.value.length < 1 || !(/^\s+$/.test(mensaje))) {
         e.preventDefault();
-        warnings =warnings+ 'Mensaje está vacio <br>';
+        warnings =warnings+ 'Mensaje está vacio o incorrecto <br>';
         entra=true;
     }
     if (entra){

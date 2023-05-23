@@ -65,7 +65,10 @@ boton.addEventListener('click',()=> {
 
 
 } )
-
+_toggle.onclick = () =>{
+    _items.classList.toggle("open")
+    _toggle.classList.toggle("close")
+}
 /* window.onload=function(){
     fetch("http://localhost:8080/admin/odontologo/list")
         .then(function(respuesta){
