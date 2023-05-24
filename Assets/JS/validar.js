@@ -12,7 +12,7 @@ let warnings ="";
 let entra=false;
 parrafo.innerHTML="";
 let exp_email= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-if (nombre.value.length < 1 || !(/^\s+$/.test(nombre))){ 
+if (nombre.value.length < 1 || (/^\s+$/.test(nombre.value))){ 
     e.preventDefault();
     warnings=warnings+' Nombre Inválido <br>';
       entra=true;
@@ -22,7 +22,7 @@ if (nombre.value.length < 1 || !(/^\s+$/.test(nombre))){
         warnings =warnings+'Email Inválido <br>';
         entra=true
     }
-    if (mensaje.value.length < 1 || !(/^\s+$/.test(mensaje))) {
+    if (mensaje.value.length < 1 || (/^\s+$/.test(mensaje.value))) {
         e.preventDefault();
         warnings =warnings+ 'Mensaje está vacio o incorrecto <br>';
         entra=true;
@@ -31,7 +31,8 @@ if (nombre.value.length < 1 || !(/^\s+$/.test(nombre))){
     parrafo.innerHTML=warnings
     }
     else
-    { parrafo.innerHTML="Mensaje Enviado <br>"}
+    {   e.preventDefault();
+        parrafo.innerHTML="Mensaje Enviado <br>"}
 }
 
 formulario.addEventListener ("submit", validar)
