@@ -20,52 +20,6 @@ a:visited {
   text-decoration: none;
 }
 
-/* HEADer Y NAVBAR*/
-/*
-header{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap:50%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  background-color: #2B4B46;
-  height:300%;
-}
-
-#logosup{
-  width:336px;
-  height: 80px;
-  position: relative;
-  right:20px;
-
-}
-
-.navbar{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 150%;
-  position: relative;
-  right:300px;
-}
-
-.navbar a{
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 28px;
-
-color: #CFA867;
-
-}
-*/
-
-/*seccion de video
-*/
 
 .sectionVideo {
   height: 500px;
@@ -148,6 +102,7 @@ color: #CFA867;
 .carrousel {
   width: 100%;
   max-width: 120em;
+  overflow: hidden;
 }
 
 .carrousel .grande {
